@@ -1,0 +1,512 @@
+body{
+    width: 95%;
+     margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+header{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.menu{
+        background: #3c5d5d;
+    width: 100%;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size:18px;
+    font-family: sans-serif;
+    
+    
+}
+
+div.baslik{
+    background: #e0ebeb;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.logo{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    width: 100%; 
+}
+.menu ul{
+   
+    margin-right: auto;
+    list-style: none;
+    display: inline-block;
+}
+.menu ul li{
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 120px;
+    height: 40px;
+    background:#3c5d5d;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+     
+    
+
+}
+.menu ul li:hover{
+    background: #283e3e;
+}
+
+    
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 7px;
+   
+}
+.menu ul li ul{
+    position: absolute;
+    top:40px;
+    left: -50px;
+    float: left;
+    display: none;
+    z-index: 1;
+}
+.menu ul li:hover ul{
+    display: block;
+}
+footer{
+    background: #3c5d5d;
+    width: 95%;
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    color:white;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size:18px;
+    font-family: sans-serif;
+}
+div.orta{
+    margin-top: 25px;
+    width: 95%;
+    height: auto;
+    background: #f0f5f5;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20;
+    padding-bottom: 20;
+    text-align: center;
+}
+.yazilar{
+    width: 90%;
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+    background: #83afaf;
+    color: white;
+    padding: 20;
+    font-size: 18px;
+}
+div.yazilar h1,h3{
+    
+    text-align: center;
+}
+div.yazilar i{
+    font-weight: bold;
+    position: relative;
+    left: 25px;
+}
+div.yazilar a{
+    color: white;
+    text-decoration: none;
+    
+}
+div.yazilar img{
+    width: 50%;
+    height: 30%;
+    margin: 10;
+    position: relative;
+    left: 25px;
+}
+div.video{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.video video{
+    width: 50%;
+    height: 30%;
+    
+    
+}
+div.video a{
+    text-decoration: none;
+    color: white;
+    margin: 10;
+    
+}
+
+div.icbas{
+    width:60%;
+    background: #324e4e;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    position: relative;
+    top: -5px;
+    padding: 5;
+    box-shadow: 0 0 6px 4px black;
+    
+}
+div.kayan{
+    width:85%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5;
+}
+
+div.iletisim{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #83afaf;
+   
+}
+#menutik{  
+    display:none;
+}
+.menutik{  
+    display:none;
+}
+#kontrol {
+	 
+	 position:absolute;
+	 right:0;
+	 bottom:10px;
+	 
+ }
+ 
+ #kontrol a {
+	 
+	 color:white;
+	 background: rgba(0,0,0,0.5);
+	 padding:10px;
+	 text-decoration:none;
+	 
+	 
+ }
+div.slider{
+    	 position:relative;
+	 margin:0 auto;
+	 width:90%;
+	 height: 60vh;
+	 font: 19px sans-serif;
+	 overflow:hidden;
+}
+div.slayt img{
+    height: 100%;
+}
+
+div.altort{
+    margin-top: 20;
+    width: 90%;
+    height: 40vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.haber{
+    float: left;
+    width: 49%;
+    background: #83afaf;
+    height: 95%;
+}
+div.duyuru{
+    float: right;
+    width: 49%;
+    background: #83afaf;
+    height: 95%;
+    text-align: center;
+}
+marquee{
+    width: 90%;
+    height: 80%;
+    color: white;
+}
+div.sosyal a img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10;
+    margin-left: 15;
+    margin-bottom: 10;
+}
+div.tablo{
+     width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 25;
+    background: #83afaf;
+   padding-top: 15;
+}
+div.tablo table p{
+    color: white;
+    float: left;
+    margin-top: 10;
+    margin-bottom: 10;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+input.gonder{
+    font-family: sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    
+}
+div.tablo table input{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 30px;
+}
+div.tablo table{
+    display: inline-block;
+    margin-bottom: 25;
+    margin-top: 25;
+}
+#tabloid{
+    color: white;
+    
+    
+    font-size: 20px;
+}
+#tabloid p{
+    margin-left: 10px;
+}
+
+.tablo h3{
+    color: white;
+    margin-top: 20;
+    
+}
+.yukari_cik {
+        display: none;
+        height: 80px;
+        width: 80px;
+        border-radius: 40px;
+        background-color:#83afaf;
+        color: white;
+        font-size:15px;
+        line-height: 80px;
+        text-align: center;
+        position: fixed;
+        bottom: 15px;
+        right: 10px;
+    z-index: 1;
+      }
+.yukari_cik:hover {
+        cursor: pointer;
+        background-color: #283e3e;
+      }
+      .goster {
+        display: block;
+      }
+@media screen and (max-width: 768px){
+    #basi{
+        width: 100%;
+    }
+    #ortasi{
+        width: 100%;
+    }
+    #son{
+      width: 100%;  
+    }
+    div.menu ul li{
+       width: 40%; 
+        float: left;
+    
+    }
+    
+    div.menu ul li ul{
+       width: 120%; 
+    
+    
+    }
+}
+ 
+
+ 
+
+
+@media screen and (max-width: 768px){
+    body{
+    width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+}
+  #basi{
+        width: 100%;
+    }
+    #ortasi{
+        width: 100%;
+        
+    }
+    #son{
+      width: 100%;  
+    }
+    div.menu ul li{
+       width: 80%;
+       display: none;
+        position: relative;
+        z-index: 1;
+    
+    }
+    div.menu{
+        padding-bottom: 10px;
+        height: 50px;
+    }
+    
+    div.menu ul li ul{
+       width: 125%;
+        z-index: 1;
+    
+    }
+    
+    .menutik{
+        display: block;
+        padding-top: 15px;
+        font-size: 25px;
+        
+    }
+    #menutik:checked~ul li{
+        display: block;
+
+    }
+    div.slider{
+        width: 98%;
+    }
+     div.menu ul li ul{
+       width: 125%;
+        z-index: 1;
+    
+    }
+     div.menu ul li ul{
+       width: 125%;
+        z-index: 1;
+    
+    }
+    div.haber{
+        width: 98%;
+        float: none;
+        height: 45%;
+    }
+    div.duyuru{
+        width: 98%;
+        float: none;
+        height: 45%;
+    }
+     div.altort{
+    
+        height: 60vh;}
+}
+
+@media screen and (max-width: 768px){
+    body{
+    width: 100%;
+     margin-left: auto;
+    margin-right: auto;
+}
+    #basi{
+        width: 100%;
+    }
+    #ortasi{
+        width: 100%;
+        
+    }
+    #son{
+      width: 100%;  
+    }
+    div.menu ul li{
+       width: 80%;
+       display: none;
+        position: relative;
+        z-index: 1;
+    
+    }
+    div.menu{
+        padding-bottom: 10px;
+        height: 50px;
+    }
+    
+    div.menu ul li ul{
+       width: 125%;
+        z-index: 1;
+    
+    }
+    
+    .menutik{
+        display: block;
+        padding-top: 15px;
+        font-size: 25px;
+        
+    }
+    #menutik:checked~ul li{
+        display: block;
+
+    }
+    div.slider{
+        width: 98%;
+    }
+     
+     div.menu ul li ul{
+       width: 125%;
+        z-index: 1;
+    
+    }
+     div.haber{
+        width: 98%;
+         float: none;
+         height: 45%;
+    }
+    div.duyuru{
+        margin-top: 20;
+        width: 98%;
+        float: none;
+        height: 45%;
+    }
+    div.altort{
+    
+        height: 60vh;}
+    div.iletisim{
+        width: 98%;
+        margin-bottom: 25;
+    }
+    div.yazilar img{
+    width: 90%;
+   
+    
+}

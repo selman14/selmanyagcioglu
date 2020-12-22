@@ -1,0 +1,123 @@
+<html>  
+<head>
+<title>OpenCV</title>
+<link rel="stylesheet" href="HayrettinSelmanYagcioglu.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header id="basi">
+        <div class="baslik"><div class="logo"><img src="img/logo.gif"></div></div>
+        <div class="menu">
+            <input type="checkbox" id="menutik">
+            <label for="menutik" class="menutik">MENÜ</label>
+            
+            <ul>
+            <li><a href="index.html">ANA SAYFA</a></li>
+            <li><a href="hakkimda.html">HAKKIMDA</a></li>
+                <li><a href="iletisim.html">İLETİŞİM</a></li>
+            <li><a href="#">ÇALIŞMALAR</a>
+                <ul>
+                <li><a href="opencv.html">OPENCV</a></li>
+                <li><a href="labirent.html">LABİRENT</a></li>
+                <li><a href="lorem.html">BİLİŞİM</a></li>
+                </ul>
+                </li>
+            
+            </ul>
+        
+        </div>
+        
+        
+    </header>
+    <div class="orta" id="ortasi">
+        <div class="yazilar">
+            <div class="video"><video controls><source src="img/opencv.mp4" type="video/mp4"></video><br>
+            <a href="img/opencv.mp4" download>VİDEO İNDİR</a>
+            </div>
+            
+         <p>
+            
+        <h1>OpenCV Nedir?</h1>
+
+OpenCV (Open Source Computer Vision) 1999 yılında geliştirilmeye başlanmış açık kaynak kodlu görüntü işleme kütüphanesidir.İlk başta C programlama dili ile geliştirilmeye başlanmış daha sonra birçok algoritması C++ ile yazılmıştır. Kütüphane çapraz platformlu ve açık kaynaklı BSD lisansı altında kullanım için ücretsizdir.<br>
+
+OpenCv yüzleri ve nesneleri algılama ve tanıma, videolarda insani eylemleri sınıflandırma, kamera hareketlerini ve hareketli nesneleri izleme, nesneleri 3 boyutlu modellerine ayıklama ve stereo kameralardan 3D nokta bulutları üretme, görüntüleri yüksek çözünürlükte birleştirme gibi alanlarda başarılı olarak kullanılır.<br>
+<h3>OpenCV Nasıl Kurulur?</h3>
+
+OpenCV Python’ın dahili kütüphaneleri ile birlikte gelmez harici bir şekilde kurmamız gerekir.Bunun için bilgisayarımızda terminal ekranını açıp.<br>
+
+   <i> >pip3 install opencv-python</i> <br>
+
+Komutu çalıştırdığımızda kütüphane kullanıma hazır olacaktır.<br>
+
+Kütüphanenin düzgün çalıştığını kontrol etmek için bir Python editörü açıp.<br>
+
+    <i>import cv2</i><br>
+
+Kodununu çalıştırdığımızda hata almıyorsak kurulum başarılı bir şekilde tamamlanmıştır.<br>
+
+Eğer PIP Paket Yöneticisi kurulu değil ise çok kısa iki adımla kurabiliriz ilk olarak https://bootstrap.pypa.io/get-pip.py adresinden get-pip.py adlı dosyayı indirmek ardından terminal ekranını açarak.<br>
+
+GNU/Linux için<br>
+
+   <i> >python3 get-pip.py</i><br>
+
+Windows için<br>
+
+    <i>>py get-pip.py</i><br>
+
+Komutlarını çalıştırarak kurulumu tamamlayabiliriz.<br>
+<h3>Resim Okuma Açma ve Yazma</h3>
+
+OpenCV bir görüntü işleme kütüphanesi bundan ötürü biz de resimler,videolar ve canlı görüntüler ile çalışacağız.İlk olarak resimden başlayım.<br>
+
+İlk olarak OpenCV kütüphanesini import edelim<br>
+
+    <i>import cv2</i><br>
+
+Resim dosyalarını imread(resim_yolu) fonksiyonu ile okuyacağız burada dikkat etmemiz gereken resim yolunu tam ve doğru şekilde yazmak eğer resim ile betik dosyamız aynı dizin içerisindeyse direkt resmin adını parametre olarak verip resmimizi okuyabiliriz.<br>
+
+            <i>img=cv2.imread(“resim_adi.jpg”)</i><br>
+
+Ancak farklı dizinlerde ise resim yolunu tam olarak yazmamız gerekir.<br>
+
+            <i>img=cv2.imread(“/home/selman/İndirilenler/resim_adi.jpg”)</i><br>
+
+Artık img değişkenine bir resim atamış olduk şimdi bu resmi nasıl açacağız bakalım.<br>
+
+Okuduğumuz resimleri açarken imshow(pencere_basligi,degisken ) fonksiyonu ile resimleri açabiliriz.Parametre olarak ilk parametremizde resim açıldığında yeni bir pencerede açılacağı için bir başlık girmemiz gerekir,ikinci parametremiz ise imread() fonksiyonu ile resmi atadığımız değişkeni girmemiz gerekir.<br>
+
+    <i>cv2.imshow(“resim baslık”,img)</i><br>
+
+Eğer bu şekilde kodu çalıştırır isek bir anda açılıp kapanan bir pencere göreceğiz bunun için ise iki fonksiyon var ilki waitKey(tuş) klavyeden bir tuş basmamızı beklerken destroyedAllWindows() açılan penceredeki “x” işaretine basıldığında OpenCV’ye bağlı pencereleri kapatır.<br>
+<img src="img/open1.png"><br>
+
+İşlediğimiz resimleri yazdırabilmek için imwrite(“yeniresim.jpg”,degisken) fonksiyonunu kullanırız.<br>
+
+    <i>cv2.imwrite(“yeniresim.jpg”,img)</i><br>
+
+<h3>BGR Mantığı ve Renk Kanalları</h3>
+
+İlk olarak renk, nesne tanımayı, nesnenin görüntüden çıkarımını kolaylaştıran bir tanımlayıcıdır. İkinci olarak ise insanlar yalnızca gri tona kıyasla binlerce renk tonunu ve yeğinliğini ayırt edebilir.BGR renk uzayında renkler 3 renkten oluşur sırasıyla Mavi(Blue),Yeşil(Green) ve Kırmızı(Red) renkleridir.3 renk bize 3 kanalı ifade eder her kanal 8 bit olmakla beraber 0 ile 255 arası değer alırlar bu değerlerin yoğunluğu bize rengi verir.<br>
+<img src="img/open2.png"><br>
+
+Şimdi bir img değişkenine bir resim atayalım ve 150. satır 200. sütunda ki değerleri inceleyelim.Dikkat etmemiz gereken bir şey OpenCV resimleri matris olarak gördüğü için ilk satır sonra sütun değerlerini girmemiz gerekir.<br>
+<img src="img/open3.jpeg"><br>
+<img src="img/open4.png"><br>
+
+Gördüğümüz üzere görüntü 3 kanallı her kanalın 8 bit olduğu pikseller den oluşuyor.Ancak görüntü işlerken daha fazla performans daha fazla bellek alanı isteriz,3 kanallı bir resmi tek kanala düşürmek yani siyah beyaz bir görüntü elde etmek bize aynı oranda bellek kazancı sağlar şimdi bunu renkli bir görüntüyü gri hale çevirelim farkları inceleyelim.Tek kanala düşürmek için iki yöntem kullanabiliriz bunlar imread(“resim_yolu”,0) imread() fonksiyonuna ikinci parametre olarak 0 değerini vermek ikincisi ise cvtColor(degisken,cv2.COLOR_BGR2GRAY) fonksiyonunu kullanmak.<br>
+<img src="img/open5.png"><br>
+
+Resim Boyutlarına bakıldığında tam 3 kat fark görmekteyiz kanala baktığımızda ise gri resimde teke düştüğünü görüyoruz.<br>
+        </p>
+        
+        </div>
+        
+    </div>   
+    <a class="yukari_cik">Yukarı Çık</a>
+    <footer id="son">Hayrettin Selman Yağcıoğlu|Tüm Hakları Saklıdır
+    <div class="sosyal"><a href="https://www.instagram.com/selmany14/" target="_blank"><img src="img/insta.svg"></a><a href="https://www.linkedin.com/in/selman-ya%C4%9Fc%C4%B1o%C4%9Flu-8bb75b188/" target="_blank"><img src="img/linked.jpg"></a><a href="https://selmany14.medium.com/" target="_blank"><img src="img/medium.webp"></a></div></footer>
+<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
