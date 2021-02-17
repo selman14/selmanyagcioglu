@@ -1,2 +1,2 @@
 # selmanyagcioglu
-Kişisel Site
+Web ödev
